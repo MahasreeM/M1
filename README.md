@@ -89,22 +89,17 @@ Write a program to find minimum between two fraction numbers using conditional o
 #include <stdio.h>
 int main()
 {
-    int a,b;
+    int a,b,min;
     scanf("%d%d",&a,&b);
-    if (a<b)
-    {
-        printf("Minimum between %d and %d is %d",a,b,a);
-    }
-    else
-    {
-        printf("Minimum between %d and %d is %d",a,b,b);
-    }
+    min=(a<b)? a:b;
+    printf("Minimum between %d and %d is %d",a,b,min);
     return 0;
 }
 ```
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/4209f9a3-07bc-4c3f-9371-eb2465f779b4)
+![image](https://github.com/user-attachments/assets/a995b7b2-f70a-4765-9286-0328d54879f4)
+
 
 ## RESULT:
 Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
