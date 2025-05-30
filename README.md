@@ -171,18 +171,16 @@ int main()
     percentage = total / 3;
     printf("Total Marks = %d\n", total);
     printf("Percentage = %.2f%%\n", percentage);
-    if (m1 < 33 || m2 < 33 || m3 < 33) {
-        printf("Result: Fail (One or more subjects below 33)\n");
-    } else if (percentage >= 60) {
-        printf("Result: First Division\n");
-    } else if (percentage >= 50) {
-        printf("Result: Second Division\n");
-    } else if (percentage >= 40) {
-        printf("Result: Pass\n");
-    } else {
-        printf("Result: Fail\n");
-    }
-
+    if (total>=40)
+ {
+     if(percentage>=60)
+         printf("Division = First\n");
+     else if(percentage>=48 && percentage<60)
+         printf("Division = Second\n");
+     else if(percentage>=36 && percentage<48)
+         printf("Division = Pass\n"); 
+     else
+         printf("Division = Fail\n");
     return 0;
 }
 ```
